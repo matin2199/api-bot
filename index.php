@@ -1,6 +1,8 @@
 <?php
-define('API_KEY',"توکن");
-function countmsgbot($method,$datas=[]){
+define('API_KEY',"توکن");1135345138:AAG73satjWPlmzofkMoK3a1cJ7A_Gl_1gdU
+
+adeghi
+unction countmsgbot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
@@ -25,7 +27,8 @@ $bot = json_decode(file_get_contents("https://binaam.000webhostapp.com/bot/count
 if($text == "/start"){
     countmsgbot("sendMessage",[
         "chat_id"=>$chat_id,
-        "text"=>"توکن ربات خود را ارسال کنید"
+        "text1135345138:AAG73satjWPlmzofkMoK3a1cJ7A_Gl_1gdU
+=>"توکن ربات خود را ارسال کنید"
     ]);
 }else if($bot->result->tag == "new") {
         countmsgbot("sendMessage", [
@@ -43,7 +46,8 @@ if($text == "/start"){
     }else if($bot->result->error == "Token Not Found"){
         countmsgbot("sendMessage", [
             "chat_id" => $chat_id,
-            "text" => "توکن صحیح نمیباشد"
+            "text"1135345138:AAG73satjWPlmzofkMoK3a1cJ7A_Gl_1gdU
+ => "توکن صحیح نمیباشد"
         ]);
     }else if($bot->result->error == "Admin Id is empty"){
         countmsgbot("sendMessage", [
@@ -57,7 +61,10 @@ if($text == "/start"){
         ]);
     }else if($bot->result->error == "Admin Id and Start Text is empty"){
         countmsgbot("sendMessage", [
-            "chat_id" => $chat_id,
-            "text" => "متن شروع و نام کاربری مدیر خالی است"
+            "chat_id"pahrq
+ => $chat_id,
+          
+"text" =>on
+ "متن شروع و نام کاربری مدیر خالی است"
         ]);
     }
